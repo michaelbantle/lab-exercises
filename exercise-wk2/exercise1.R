@@ -9,7 +9,7 @@ my.vector <- c(my.num, initials)
 vector.sum <- sum(my.vector)
 
 # Describe why this doesn't work: 
-# 
+# You cannot have words in the parenthases.
 
 install.packages("stringr")
 
@@ -18,12 +18,12 @@ my.line <- "Hey, hey, this is the library"
 print(str_length(my.line))
 
 # Describe why this doesn't work: 
-# 
+# there needs to be a command in front of the function to print/install.
 
 said.the.famous <- paste(my.line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# my.line not found. Also, up top we set it as "initials," not "initial"
 
 
 ## Part 2 - Vector and function practice
@@ -32,6 +32,10 @@ said.the.famous <- paste(my.line, " - ", initial)
 
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
+CompareLength <- function(x,y) {
+}
+x <- c(0,1,2,3,4,5,6,7,8,9)
+y <- c(0,1,2,3,4,5,6,7,8,9)
 
 
 # Pass two vectors of different length to your `CompareLength` function
